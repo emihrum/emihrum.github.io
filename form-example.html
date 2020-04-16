@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+    <title>Form Example</title>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2e6fcbb4c8.js" crossorigin="anonymous"></script>
+    <link href="css/styles.css" rel="stylesheet">    
+</head>
+
+<body>
+    <header>
+        <div class="left-header">
+            <h1 class="first-name">Mihaly Rumpler</h1>
+        </div>
+        <div class="right-header">
+            <p>Hungary, ******** ******* ********<i class="fas fa-home"></i></p>
+            <p>+36-**/***-****<i class="fas fa-mobile-alt"></i></p>
+            <p>*****.*****@gmail.com<i class="fas fa-envelope"></i></p>
+            <p><a href="www.linkedin.com/in/mihalyrumpler">www.linkedin.com/in/mihalyrumpler</a><i class="fab fa-linkedin"></i></p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="summary.html">Summary</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li class="active"><a href="form-example.html">Form Example</a></li>
+        </ul>
+    </nav>
+
+    <div class="form-wrapper">
+        <section class="form">
+            <h1>Form Example</h1>
+            <form method="POST" action=""></form>
+                <fieldset>
+                    <legend>Your contact information</legend>
+
+                    <label for="name">Your name</label>
+                        <input type="text" id="name" name="name" autofocus>
+
+                    <label for="phone">Phone number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Don't forget the area code!">
+                    
+                    <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your selected items</legend>
+
+                    <label for="item-type">What type of item do you want?</label>
+                        <select id="item-type" name="item-type">
+                            <option selected>Select one...</option>
+                            <option value="type1">Type 1</option>
+                            <option value="type2">Type 2</option>
+                            <option value="type3">Type 3</option>
+                            <option value="type4">Type 4</option>
+                        </select>
+
+                    <p>What color do you prefer?</p>
+                    <label>
+                        <input type="radio" name="item-color" value="red" checked> Red
+                    </label>
+                    <label>
+                        <input type="radio" name="item-color" value="blue"> Blue
+                    </label>
+                    <label>
+                        <input type="radio" name="item-color" value="green"> Green
+                    </label>
+                    <label>
+                        <input type="radio" name="item-color" value="black"> Black
+                    </label>
+                    <label>
+                        <input type="radio" name="item-color" value="any"> Whatever is available
+                    </label>
+
+                    <label for="qty">How many item would you like to order?</label>
+                        <input type="number" id="qty" name="qty" min="1" max="10">          
+
+                    <label for="comments">Special requests:</label>
+                    <textarea id="comments" name="comments"></textarea>
+
+                    <label for="date">Preferred delivery date</label>
+                        <input type="date" id="date" name="date">
+
+                    <label>
+                        <input id="subscribe" name="subscribe" type="checkbox" value="subscribe">Add me to your email list
+                    </label>
+
+                    <input id="send_to" type="hidden" name="send_to" value="">
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <aside>
+            <h3>Our Location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1411.1614370128507!2d-93.27191134226143!3d44.977751763344614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b3329a75fc44b3%3A0xab6d15df00205abb!2s60+South+6th+St%2C+Minneapolis%2C+MN+55402!5e0!3m2!1sen!2sus!4v1540308714418"
+            width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <address>
+                Frontend Masters <br>
+                60 South 6th Street <br>
+                Suite 3625 <br>
+                Minneapolis, MN 55402
+            </address>
+        </aside>
+    </div>
+    <script src=""></script>
+</body>
+</html>
